@@ -8,7 +8,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ProductSearch {
 
@@ -47,9 +48,17 @@ public class ProductSearch {
   }
 
   public List<Product> search(String term) {
-    return products
-      .stream()
-      .filter(product -> StringUtils.contains(product.getDescription(), term))
-      .collect(Collectors.toList());
+    List<Product> result = new ArrayList<>();
+    Pattern pattern = StringUtils.toRegex(term);
+
+    for(Product product : products) {
+      Matcher matcher = pattern.matcher(product.getDescription());
+
+      if(matcher.find()) {
+        result.add(product);
+      }
+    }
+
+    return result;
   }
 }

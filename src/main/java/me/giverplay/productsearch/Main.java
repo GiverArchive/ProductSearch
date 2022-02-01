@@ -9,6 +9,7 @@ public class Main {
     ProductSearch search = new ProductSearch();
     printSearch(search, "arruela");
     printSearch(search, "parafuso");
+    printSearch(search, "10%parafuso");
   }
 
   private static void printSearch(ProductSearch search, String term) {
