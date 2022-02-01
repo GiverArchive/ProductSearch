@@ -1,0 +1,10 @@
+1;10x50 parafuso RI;;12.5
+2;10x90 MB parafuso rex;;14.5
+3;Lente escura 12;019293001020030;2.75
+4;Copo azul;1201020300123;2.54
+5;Mascara descartável;;4.25
+6;12x50 RI parafuso 10.9;;17.49
+7;10mm arruela lisa;;0.73
+8;12mm arruela lisa;;0.95
+9;14mm arruela de pressao;;0.89
+10;10mm arruela de pressao;;0.57
